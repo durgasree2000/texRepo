@@ -1,0 +1,142 @@
+*,
+*:before,
+*:after{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0, 0,0, 0.75)),
+     url(../../../assets/image/0074f1f7-6424-4c84-a972-d300dded9694.jpg);
+     background-size: cover;
+     width: 100%;
+     height: 100%;
+    
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    top: 50%;
+    left: 50%;
+    display: grid;
+}
+nav{
+    width: 100%;
+}
+ul{
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size:50px;
+}
+li{
+ 
+    position: relative;
+    padding:  0 15px;
+    height: 100%;
+    display: flex;
+
+}
+li a{
+    z-index: 1;
+    color:hotpink;
+    text-decoration:none;
+    font-weight: 800;
+    font-size: 3vmin;
+    padding: 10px ;
+}
+li::before{
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color:aqua;
+    right: 0;
+    z-index: 0;
+    top: 33.33%;
+    transition: all 0.5s;
+}
+li::after{
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: aqua;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+li a::before{
+    position: absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: aqua;
+    bottom: 66.66%;
+    left: 0;
+    transition:  all 0.5s;
+
+}
+li a::after{
+    position: absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: aqua;
+    bottom: 0;
+    left: 0;
+    transition:  all 0.5s;
+    
+}
+li:hover:before,
+li:hover:after,
+li:hover a::before{
+    width: 100%;
+}
+ p{
+       display: flex;
+       justify-content: center;
+       color:black;
+       padding-top: 80px;
+       font-size: 10px;
+       opacity: 0.6;
+ }
+ p a{
+   text-decoration: none;
+   color: blue;
+   
+ }
+ .pargh{
+    padding-top: 5px;
+   
+ }
+h1{
+    padding-top: 120px;
+    display: flex  ;
+    font-size: 90px;
+    justify-content: center;
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    
+    18%,20%,50%,10%,100%{
+        color: black;
+        box-shadow: none;
+    }
+10%,50%,100%
+    {
+        color: blue;
+        
+        
+    }
+}

@@ -1,0 +1,76 @@
+body {
+    background-color: yellowgreen
+       }
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    background: yellowgreen;
+    padding: 25px;
+    margin-left: 30%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgba(254, 236, 164, 1);
+}
+
+.wrapper h6 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: yellow;
+}
+
+.wrapper .input_field {
+    margin-bottom: 10px;
+
+
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+    border: 1px solid #7c0c0c;
+    border-radius: 7px 7px 7px 7px;
+    width: 100%;
+    padding: 10px;
+}
+
+.wrapper textarea {
+    resize: none;
+    height: 80px;
+}
+
+.wrapper .btn input[type="submit"] {
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: brown;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 25px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+}
+.parag {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.parag p {
+    color: black;
+    
+}
+
+img{
+background:transparent;
+transition: transform 0.5s, background 0.5s;
+}
+img:hover{
+transform: scale(1.3);
+}
